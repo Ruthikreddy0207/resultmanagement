@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome, Staff</h2>
+        <p>Upload student marks and manage results here.</p>
+        
+        <section class="marks-input">
+            <h3>Enter Marks Individually</h3>
+            <form id="individualMarksForm">
+                <label for="username">Student Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="marks">Marks:</label>
+                <input type="number" id="marks" name="marks" required>
+                <button type="submit">Submit Marks</button>
+            </form>
+        </section>
+            <p>OR</p>
+        <section class="file-upload">
+            <h3>Upload Marks via File</h3>
+            <form id="fileUploadForm" enctype="multipart/form-data">
+                <label for="marksFile">Select File:</label>
+                <input type="file" id="marksFile" name="marksFile" accept=".xls, .xlsx, .csv" required>
+                <button type="submit">Upload File</button>
+            </form>
+        </section>
+    </main>
+    <script src="script2.js"></script>
+</body>
+</html>
